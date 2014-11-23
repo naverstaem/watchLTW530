@@ -1647,8 +1647,8 @@ input::placeholder, textarea::placeholder { font-size: 16px; text-transform: non
 .btn--green:hover, .btn--green:focus { background: #b1cb6d; }
 .btn--green:active { -webkit-box-shadow: 0 0 0 0; box-shadow: 0 0 0 0; }
 
-.title { color: #333333; text-align: center; font-size: 48px; text-transform: uppercase; font-family: "NeoSansW1G-Light"; }
-.title span { font-family: "NeoSansW1G-Regular"; }
+.title { color: #333333; text-align: left; font-size: 36px; text-transform: uppercase; font-family: "foundry_monoline_ot3_lightLt"; }
+.title span { font-family: "foundry_monoline_ot3_mediumMd"; }
 
 .counter { display: inline-block; vertical-align: middle; margin-top: 10px; text-align: center; }
 .counter .bl { display: inline-block; text-align: center; margin: 0 6px; }
@@ -1717,12 +1717,15 @@ header .header__form, .header--bottom .header__form { position: relative; z-inde
 .intro__text h2 { font-size: 27px; font-weight: normal; }
 .intro__text p { font-size: 18px; margin-top: 20px; }
 
-.about { padding: 100px 0; font-family: "NeoSansW1G-Medium"; color: #333333; -webkit-box-shadow: inset black 0 20px 40px -32px; box-shadow: inset black 0 20px 40px -32px; }
-.about h2 { letter-spacing: -1px; text-align: left; margin: 30px 0 0; }
-.about h3 { margin-top: 5px; margin-bottom: 35px; font-size: 21px; }
-.about p { font-size: 16px; font-family: "NeoSansW1G-Regular"; line-height: 1.7em; }
-.about .about__img { text-align: center; }
-.about .about__img img { width: 100%; max-width: 277px; }
+.about { font-family: "NeoSansW1G-Medium"; color: #272727; -webkit-box-shadow: inset black 0 20px 40px -32px; box-shadow: inset black 0 20px 40px -32px; }
+.about h2 { margin-bottom: 30px; }
+.about p { font-size: 18px; font-family: "foundry_monoline_ot3_regulaRg"; margin-top: 30px; }
+.about p span { font-family: "foundry_monoline_ot3_mediumMd"; }
+.about .about__img { text-align: center; margin-top: 40px; }
+.about .about__img img { width: 100%; max-width: 355px; }
+.about__first { padding: 80px; }
+.about__fresh { background: rgba(246, 246, 246, 0.6); padding: 60px; }
+.about__fresh .about__img img { max-width: 348px; }
 
 .features { background: #f6f6f7; padding: 80px 0; }
 .features .item { text-align: center; color: #333; margin-top: 50px; }
