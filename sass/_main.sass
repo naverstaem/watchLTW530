@@ -1,0 +1,782 @@
+
+
+.top
+  &:before
+    content: ''
+    position: absolute
+    width: 100%
+    height: 6px
+    background: linear-gradient(to left, #159dbb, #1571d5)
+    top: 0
+    left: 0
+.navbar
+  margin-bottom: 0
+
+.navbar-brand
+  text-transform: uppercase
+  color: #1588c8 !important
+  font-family: 'foundry_monoline_ot3_extraXBd'
+  font-size: 42px
+  margin-top: 10px
+  letter-spacing: -5px
+  span
+    color: #282828
+.navbar-default
+  border: none
+  background: none
+  padding: 13px 0
+  text-align: center
+  .icon-bar
+    background-color: #333 !important
+
+  .navbar-nav
+    margin-top: 10px
+
+    li
+      a
+        color: #333 // text color
+        font-family: 'foundry_monoline_ot3_bold_Bd'
+        font-size: 17px
+        position: relative
+        text-transform: uppercase
+        text-decoration: none
+        &:hover, &.active, &:focus
+          text-decoration: none
+          color: #1588c8
+
+
+  .navbar-right
+    margin-top: 15px
+    font-family: 'foundry_monoline_ot3_regulaRg'
+    .right-nomenclature
+      color: #333
+      font-size: 14px
+      text-transform: uppercase
+      display: inline-block
+      position: relative
+      top: -4px
+      margin-right: 20px
+    .right-b
+      display: inline-block
+      text-align: right
+
+      h2
+        font-weight: normal
+        font-size: 29px
+        margin: 0
+        i
+          position: relative
+          background: url(../img/phone.png) no-repeat
+          width: 26px
+          height: 26px
+          margin-right: 10px
+          top: 3px
+          display: inline-block
+      a
+        color: #333 // text color
+        font-size: 15px
+        line-height: 1
+        display: inline-block
+        border-bottom: 1px dotted #333
+        text-decoration: none
+        +border-radius(0)
+        padding: 0
+        &:hover
+          border-bottom: 1px dotted rgba(#fff, 0)
+
+
+
+
+header
+  position: relative
+  +background-image(linear-gradient(61deg, #1571d5 0%, #169fb9 100%))
+  +cover
+  overflow: hidden
+  &:before
+    +background-image(linear-gradient(to bottom, rgba(0,0,0,.33) 0%, rgba(0,0,0,0.27) 0.49%, rgba(255,255,255,0) 100%))
+    height: 8px
+    width: 100%
+    position: absolute
+    content: ""
+    top: 0
+    left: 0
+
+  h1
+    text-align: left !important
+    font-family: 'foundry_monoline_ot3_uultraLt'
+    font-size: 47px
+    color: #ffffff
+    text-transform: uppercase
+    margin-top: 80px
+    margin-bottom: 40px
+  h2
+    text-align: left
+    font-family: 'foundry_monoline_ot3_regulaRg'
+    font-size: 23px
+    color: #ffffff
+    text-transform: uppercase
+    display: inline-block
+    border-left: solid white 7px
+    padding-left: 20px
+  .header__text
+    font-family: 'foundry_monoline_ot3_regulaRg'
+    margin-top: 35px
+    font-size: 19px
+    color: #ffffff
+    padding-right: 40px
+
+  .header__watch
+    position: relative
+    text-align: left
+    z-index: 0
+    margin-top: -90px
+    margin-left: -400px
+    margin-bottom: -110px
+    img
+      display: inline-block
+      max-width: 884px
+  .header__form
+    position: relative
+    z-index: 0
+    margin-left: -5px
+    margin-right: -5px
+
+.intro
+  padding-top: 30px
+  &__img
+    text-align: center
+    img
+      width: 100%
+      max-width: 246px
+
+  &__text
+    padding-top: 50px
+    color: #333
+    font-family: 'NeoSansW1G-Regular'
+    h2
+      font-size: 27px
+      font-weight: normal
+    p
+      font-size: 18px
+      margin-top: 20px
+
+
+
+
+
+.about
+  padding: 100px 0
+  font-family: 'NeoSansW1G-Medium'
+  color: #333333
+  +box-shadow(inset black 0 20px 40px -32px)
+
+  h2
+    letter-spacing: -1px
+    text-align: left
+    margin: 30px 0 0
+  h3
+    margin-top: 5px
+    margin-bottom: 35px
+    font-size: 21px
+
+  p
+    font-size: 16px
+    font-family: 'NeoSansW1G-Regular'
+    line-height: 1.7em
+  .about__img
+    text-align: center
+    img
+      width: 100%
+      max-width: 277px
+
+
+.features
+  background: rgb(246,246,247)
+  padding: 80px 0
+  .item
+    text-align: center
+    color: #333
+    margin-top: 50px
+    .item__img
+      text-align: center
+      display: inline-block
+      width: 96px
+      height: 96px
+      +border-radius(50%)
+      border: solid 3px #9fbe4b
+      .vertical-aligned
+        height: 100%
+        display: inline-block
+        vertical-align: middle
+      img
+        display: inline-block
+        vertical-align: middle
+
+
+    p
+      font-size: 20px
+      font-family: 'NeoSansW1G-Regular'
+      margin-top: 10px
+
+.specs
+  padding: 80px 0
+  border-bottom: solid 1px #e5e5e5
+  h2
+    text-align: left
+    margin-bottom: 55px
+
+  table
+    border-collapse: separate
+    font-family: 'NeoSansW1G-Regular'
+    color: #1b1b1b
+    tbody
+      font-size: 14px
+      tr
+        &:nth-child(odd)
+          background: rgb(246,246,246)
+    tr
+      td
+        border: none
+        padding: 7px 0
+        &:nth-child(odd)
+          color: #8e8e8e
+          +border-top-left-radius(16px)
+          +border-bottom-left-radius(16px)
+          padding-left: 15px
+        &:nth-child(even)
+          +border-top-right-radius(16px)
+          +border-bottom-right-radius(16px)
+      th
+        width: 35%
+        border: none
+  &__colors
+    padding-left: 15px
+    font-family: 'NeoSansW1G-Regular'
+    font-size: 14px
+    color: #8e8e8e
+
+    span
+      display: inline-block
+      vertical-align: middle
+      width: 28px
+      height: 28px
+      margin-left: 10px
+      +border-radius(50%)
+      &.white
+        background: #f6f6f6
+      &.black
+        background: #0c0c0c
+      &.yellow
+        background: #ffd100
+      &.orange
+        background: #ff8900
+
+  &__img
+    text-align: center
+    img
+      width: 100%
+      max-width: 198px
+      +border-radius(50%)
+      margin-top: 40px
+      &:first-child
+        margin-top: 10px
+
+
+.options
+
+  padding-top: 10px
+  padding-bottom: 65px
+  &__img
+    text-align: center
+    img
+      width: 100%
+      max-width: 407px
+  &__text
+    text-align: left
+    padding-top: 80px
+    h2
+      text-align: left
+      margin-top: 0
+    ul
+      padding-top: 35px
+      list-style: none
+      font-family: 'NeoSansW1G-Regular'
+      font-size: 16px
+      color: #333
+      padding-left: 50px
+      letter-spacing: -0.5px
+      li
+        position: relative
+        margin-top: 25px
+        i
+          position: absolute
+          top: -5px
+          left: -50px
+          content: ""
+          width: 33px
+          height: 33px
+          +border-radius(4px)
+          +background-clip(padding-box)
+          background-color: #abc563
+          &:before
+            position: absolute
+            content: ""
+            top: 50%
+            left: 50%
+            +transform(translate(-50%,-50%))
+          &.i1
+            &:before
+              background: url(../img/options_img1.png) center no-repeat
+              width: 13px
+              height: 24px
+          &.i2
+            &:before
+              background: url(../img/options_img2.png) center no-repeat
+              width: 21px
+              height: 20px
+          &.i3
+            &:before
+              background: url(../img/options_img3.png) center no-repeat
+              width: 15px
+              height: 24px
+          &.i4
+            &:before
+              background: url(../img/options_img4.png) center no-repeat
+              width: 23px
+              height: 13px
+          &.i5
+            &:before
+              background: url(../img/options_img5.png) center no-repeat
+              width: 15px
+              height: 20px
+          &.i6
+            &:before
+              background: url(../img/options_img6.png) center no-repeat
+              width: 19px
+              height: 18px
+.works
+  text-align: center
+  padding-top: 70px
+  padding-bottom: 80px
+  background: url(../img/work_bg.png)
+  +cover
+  &__item
+    margin-top: 40px
+    img
+      margin-bottom: 30px
+    p
+      font-family: 'NeoSansW1G-Regular'
+      font-size: 17px
+      color: #242424
+      padding: 0 10px
+
+
+.reviews
+  padding: 40px
+  &__item
+    margin-top: 45px
+    text-align: center
+    font-family: 'uni_sans_regularregular'
+  &__img
+    display: inline-block
+    float: left
+    width: 40%
+    text-align: left
+  &__text
+    font-family: 'NeoSansW1G-Regular'
+    text-align: left
+    float: right
+    padding-left: 10px
+    width: 60%
+    h3
+      font-size: 21px
+      color: #242424
+      margin: 0
+    h4
+      font-size: 16px
+      color: #999
+    p
+      display: inline-block
+      position: relative
+      margin-top: 15px
+      color: #414040
+      font-size: 15px
+      padding: 15px
+      border: 1px solid #abc563
+      +border-radius(3px)
+      +background-clip(padding-box)
+      &:before
+        position: absolute
+        content: ""
+        top: -11px
+        left: 20px
+        background: url(../img/popup-ico.png) no-repeat
+        width: 31px
+        height: 13px
+        line-height: 1.5em
+
+  &__buttons
+    text-align: center
+    padding-top: 50px
+  &__more
+    display: block
+    height: 49px
+    width: 100%
+    max-width: 176px
+    margin: 0 auto
+    font-size: 21px
+    font-family: 'NeoSansW1G-Regular'
+  &__add-review
+    display: inline-block
+    margin: 20px auto 0
+    font-family: 'NeoSansW1G-Regular'
+    font-size: 16px
+    color: #414141
+    border-bottom: dotted 1px
+    text-decoration: none
+    &:hover, &:active, &:focus
+      border-bottom: dotted 1px #ffffff
+      color: #414141
+      text-decoration: none
+
+.header--bottom
+  @extend header
+
+.other
+  padding-top: 70px
+  text-align: center
+  padding-bottom: 55px
+
+  .item
+    padding: 30px 40px 100px
+    margin-top: 30px
+    margin-left: -15px
+    margin-right: -15px
+    +border-radius(4px)
+    +background-clip(padding-box)
+    //border: 3px rgb(219,219,219) solid
+    text-align: center
+    background: url(../img/other-form_bg.png) no-repeat
+    +cover
+
+
+    h3
+      font-size: 23px
+      font-family: 'NeoSansW1G-Regular'
+      color: #181818
+      margin: 0 0 10px
+
+    p
+      font-size: 29px
+      color: #181818
+      text-transform: uppercase
+
+
+  .img
+    display: inline-block
+    background: #ffffff
+    text-align: center
+    margin-bottom: 15px
+    height: 179px
+    span
+      vertical-align: middle
+      display: inline-block
+      height: 100%
+    img
+      vertical-align: middle
+      display: inline-block
+  .price-b
+    font-family: 'NeoSansW1G-Bold'
+    color: #181818
+    font-size: 26px
+    margin-bottom: 15px
+  
+
+  input
+    +placeholder
+      font-size: 16px
+    width: 100%
+    height: 35.5px
+    margin-bottom: 10px
+    padding-left: 15px
+    font-size: 16px
+    +background-clip(padding-box)
+    border: 1px solid rgba(204,204,204,.59)
+    +border-radius(3px)
+    +background-clip(padding-box)
+    +background-image(linear-gradient(to bottom, #fff 0%, #fff 1%, #fff 100%))
+    &:focus
+      @include box-shadow(0 0 9px rgba(204,62,82,.13)) // outer glow
+
+
+  button
+    width: 100%
+    font-family: 'NeoSansW1G-Regular'
+    text-transform: uppercase
+    font-size: 21px
+    margin-top: 15px
+
+
+
+footer
+
+  padding-top: 35px
+  padding-bottom: 40px
+  font-family: 'NeoSansW1G-Regular'
+  color: #414141
+  background: url(../img/footer_bg.png)
+  +cover
+  span
+    display: inline-block
+    position: relative
+    margin-right: 10px
+  p
+    font-size: 16px
+    display: inline-block
+    vertical-align: middle
+    margin-bottom: 0
+    line-height: 1.7em
+    font-family: 'NeoSansW1G-Medium'
+  .footer__right
+    text-align: right
+    font-size: 15px
+    a
+      margin-left: 15px
+      color: #414141
+      text-decoration: underline
+      &:hover
+        text-decoration: none
+//  Modal styles
+
+
+.feedback
+  text-align: center
+  .modal-backdrop
+    background: #fff
+    &.in
+      +opacity(.71)
+  .modal-dialog
+    +border-radius(3px)
+    max-width: 567px
+    +background-clip(padding-box)
+    background: rgba(#fff,.88)
+    +box-shadow(0 8px 46px rgba(0,0,0,.44))
+
+  .modal-content
+    position: relative
+    +border-radius(3px)
+    background: transparent
+    .close
+      position: absolute
+      top: 7px
+      right: 10px
+
+  .modal-header
+    border-bottom: none
+    padding-top: 30px
+    h2
+      margin-top: 15px
+      font-family: 'NeoSansW1G-Regular'
+      font-size: 45px
+    h3
+      font-family: 'NeoSansW1G-Regular'
+      color: black
+      font-size: 17px
+      padding: 0 15px
+      line-height: 1.2em
+
+
+
+  .modal-body
+    padding: 10px 45px 60px
+    form
+      input[type = text]
+        +placeholder
+          font-size: 16px
+        height: 42.5px
+        display: block
+        +border-radius(2px)
+        +background-clip(padding-box)
+        background: #fbfbfb
+        +box-shadow(inset 0 1px 2px rgba(0,0,0,.36))
+        width: 100%
+        border: none
+        margin: 0 auto 10px
+        font-size: 16px
+        color: #333
+        max-width: 230px
+        font-family: 'uni_sans_regularregular'
+        padding-left: 10px
+        &:focus
+          +box-shadow(0 0 5px rgba(79,56,109,.27), inset 0 1px 2px rgba(0,0,0,.36))
+
+
+      button
+        width: 100%
+        font-size: 21px
+        max-width: 230px
+        font-family: 'NeoSansW1G-Medium'
+        height: 46.4px
+        text-transform: uppercase
+        display: block
+        margin: 30px auto 0
+
+.add-review
+  @extend .feedback
+  .modal-dialog
+    max-width: 567px
+  .modal-content
+  .modal-header
+    padding-top: 30px
+  .modal-body
+    form
+      text-align: left
+
+      .form__inputs
+        text-align: center
+        width: 100%
+      input[type = text]
+        display: inline-block
+        margin-right: 5px
+        &:last-child
+          margin-right: 0
+
+      textarea
+        +placeholder
+          font-size: 16px
+        height: 106px
+        resize: none
+        width: 100%
+        max-width: 470px
+        padding: 15px 10px
+        margin-top: 5px
+        +border-radius(2px)
+        +background-clip(padding-box)
+        background-color: #fbfbfb
+        +box-shadow(inset 0 1px 2px rgba(0,0,0,.36))
+        border: none
+      .form__bottom
+        +clr
+
+        .checkbox
+          display: inline-block
+          text-align: left
+          font-size: 16px
+          font-family: 'NeoSansW1G-Regular'
+          >input
+            display: none
+            &:checked
+              &+label
+                .checkbox__box
+                  &:before
+                    position: absolute
+                    content: ""
+                    width: 10px
+                    height: 10px
+                    +border-radius(1px)
+                    +background-clip(padding-box)
+                    background-color: #e74d6d
+                    top: 50%
+                    left: 50%
+                    +transform(translate(-50%,-50%))
+
+
+
+          label
+            +clr
+            padding: 0
+            margin-top: 20px
+
+            .checkbox__box
+              position: relative
+              top: 2px
+              text-align: center
+              margin-right: 10px
+              width: 18px
+              height: 18px
+              +border-radius(2px)
+              +background-clip(padding-box)
+              background: #fbfbfb
+              +box-shadow(inset 0 1px 2px rgba(0,0,0,.36))
+              display: inline-block
+            .checkbox__text
+              display: inline-block
+              vertical-align: top
+        button
+          display: inline-block
+          max-width: 185px
+          float: right
+          &:disabled
+            background: #ccc
+            +box-shadow(0 4px 0 #aaa)
+            cursor: auto
+
+
+
+
+
+
+.thanks
+  @extend .feedback
+  .modal-backdrop
+    background: #000
+    &.in
+      +opacity(.71)
+  .modal-dialog
+    max-width: 441px
+  .modal-content
+    position: relative
+  .modal-header
+    .img
+      width: 96px
+      height: 96px
+      +border-radius(50%)
+      border: solid 3px #9ad300
+      margin: 0 auto
+      .vertical-aligned
+        height: 100%
+        display: inline-block
+        vertical-align: middle
+      img
+        display: inline-block
+        vertical-align: middle
+        position: relative
+        top: -3px
+    h2
+      font-size: 45px
+    h3
+      font-size: 18px
+      padding: 0
+  .modal-body
+    padding: 20px 20px 50px
+
+
+//media queries
+//@media (max-width: $screen-md-min)
+//  header
+//    .header__form
+//      margin: 0
+//  .specs
+//    .specs__img
+//      img
+//        margin-top: 40px
+//  .form
+//    padding-left: 80px
+//    padding-right: 80px
+//  .other
+//    .item
+//      padding-left: 80px
+//      padding-right: 80px
+@media (max-width: $screen-sm-min)
+  h1, h2
+    font-size: 24px !important
+  //.reviews
+  //  &__img
+  //    float: none
+  //  &__text
+  //    float: none
+
+//@media (max-width: $screen-xs-min)
+//  .form
+//    padding-left: 30px !important
+//    padding-right: 30px !important
