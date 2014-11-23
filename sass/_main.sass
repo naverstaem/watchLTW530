@@ -167,7 +167,6 @@ header
 .about
   font-family: 'NeoSansW1G-Medium'
   color: #272727
-  +box-shadow(inset black 0 20px 40px -32px)
 
   h2
     margin-bottom: 30px
@@ -194,6 +193,51 @@ header
     .about__img
       img
         max-width: 348px
+
+
+.construct
+  color: #333333
+  padding: 80px 0
+  h2
+    margin-bottom: 30px
+  p
+    font-size: 19px
+    font-family: 'foundry_monoline_ot3_regulaRg'
+    margin-top: 30px
+  &__img
+    margin-top: 40px
+    text-align: center
+    img
+      width: 100%
+    &.img1
+      img
+        max-width: 352px
+    &.img2
+      margin-top: 20px
+      img
+        max-width: 343px
+    &.img3
+      margin-top: 10px
+      img
+        max-width: 329px
+.info
+  +box-shadow(inset black 0 20px 40px -32px)
+  padding: 60px 0
+  color: #333333
+  font-size: 19px
+  font-family: 'foundry_monoline_ot3_regulaRg'
+  &__item
+    background: url(../img/info-item_bg.png) left center no-repeat
+    padding-left: 120px
+    span
+      padding-bottom: 30px
+      padding-top: 22px
+      border-bottom: solid 1px #e6e6e6
+      display: inline-block
+
+    &:last-child
+      span
+        border-bottom: none
 
 
 .features
