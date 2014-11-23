@@ -1754,7 +1754,7 @@ header .header__form, .header--bottom .header__form { position: relative; z-inde
 .features__also h3 { font-family: "foundry_monoline_ot3_mediumMd"; font-size: 18px; }
 .features__also p { font-family: "foundry_monoline_ot3_regulaRg"; font-size: 16px; }
 
-.specs { padding: 80px 0; border-bottom: solid 1px #e5e5e5; }
+.specs { padding: 80px 0; }
 .specs h2 { text-align: left; margin-bottom: 55px; }
 .specs table { border-collapse: separate; font-family: "foundry_monoline_ot3_bold_Bd"; color: #333333; }
 .specs table tbody { font-size: 14px; }
@@ -1767,21 +1767,19 @@ header .header__form, .header--bottom .header__form { position: relative; z-inde
 .specs__img img { width: 100%; max-width: 173px; margin-top: 100px; }
 .specs__img img:first-child { margin-top: 10px; }
 
-.options { padding-top: 10px; padding-bottom: 65px; }
-.options__img { text-align: center; }
-.options__img img { width: 100%; max-width: 407px; }
-.options__text { text-align: left; padding-top: 80px; }
-.options__text h2 { text-align: left; margin-top: 0; }
-.options__text ul { padding-top: 35px; list-style: none; font-family: "NeoSansW1G-Regular"; font-size: 16px; color: #333; padding-left: 50px; letter-spacing: -0.5px; }
-.options__text ul li { position: relative; margin-top: 25px; }
-.options__text ul li i { position: absolute; top: -5px; left: -50px; content: ""; width: 33px; height: 33px; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; -moz-background-clip: padding; -o-background-clip: padding-box; -webkit-background-clip: padding; background-clip: padding-box; background-color: #abc563; }
-.options__text ul li i:before { position: absolute; content: ""; top: 50%; left: 50%; -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
-.options__text ul li i.i1:before { background: url(../img/options_img1.png) center no-repeat; width: 13px; height: 24px; }
-.options__text ul li i.i2:before { background: url(../img/options_img2.png) center no-repeat; width: 21px; height: 20px; }
-.options__text ul li i.i3:before { background: url(../img/options_img3.png) center no-repeat; width: 15px; height: 24px; }
-.options__text ul li i.i4:before { background: url(../img/options_img4.png) center no-repeat; width: 23px; height: 13px; }
-.options__text ul li i.i5:before { background: url(../img/options_img5.png) center no-repeat; width: 15px; height: 20px; }
-.options__text ul li i.i6:before { background: url(../img/options_img6.png) center no-repeat; width: 19px; height: 18px; }
+.options { padding-top: 10px; padding-bottom: 90px; }
+.options ul { padding-top: 10px; list-style: none; font-family: "foundry_monoline_ot3_regulaRg"; font-size: 16px; color: #333; padding-left: 70px; letter-spacing: -0.5px; }
+.options ul li { position: relative; margin-top: 40px; }
+.options ul li i { position: absolute; top: -12px; left: -70px; content: ""; width: 44px; height: 49px; background: url(../img/options_bg.png) no-repeat; }
+.options ul li i:before { position: absolute; content: ""; top: 50%; left: 50%; -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+.options ul li i.i1:before { background: url(../img/options-img1.png) center no-repeat; width: 14px; height: 28px; }
+.options ul li i.i2:before { background: url(../img/options-img2.png) center no-repeat; width: 16px; height: 27px; }
+.options ul li i.i3:before { background: url(../img/options-img3.png) center no-repeat; width: 19px; height: 26px; }
+.options ul li i.i4:before { background: url(../img/options-img4.png) center no-repeat; width: 22px; height: 22px; }
+.options ul li i.i5:before { background: url(../img/options-img5.png) center no-repeat; width: 32px; height: 22px; }
+.options ul li i.i6:before { background: url(../img/options-img6.png) center no-repeat; width: 31px; height: 31px; }
+.options ul li i.i7:before { background: url(../img/options-img7.png) center no-repeat; width: 29px; height: 16px; }
+.options ul li i.i8:before { background: url(../img/options-img8.png) center no-repeat; width: 26px; height: 26px; }
 
 .works { text-align: center; padding-top: 70px; padding-bottom: 80px; background: url(../img/work_bg.png); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
 .works__item { margin-top: 40px; }

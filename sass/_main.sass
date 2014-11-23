@@ -275,7 +275,6 @@ header
       font-size: 16px
 .specs
   padding: 80px 0
-  border-bottom: solid 1px #e5e5e5
   h2
     text-align: left
     margin-bottom: 55px
@@ -320,75 +319,73 @@ header
 .options
 
   padding-top: 10px
-  padding-bottom: 65px
-  &__img
-    text-align: center
-    img
-      width: 100%
-      max-width: 407px
-  &__text
-    text-align: left
-    padding-top: 80px
-    h2
-      text-align: left
-      margin-top: 0
-    ul
-      padding-top: 35px
-      list-style: none
-      font-family: 'NeoSansW1G-Regular'
-      font-size: 16px
-      color: #333
-      padding-left: 50px
-      letter-spacing: -0.5px
-      li
-        position: relative
-        margin-top: 25px
-        i
+  padding-bottom: 90px
+
+  ul
+    padding-top: 10px
+    list-style: none
+    font-family: 'foundry_monoline_ot3_regulaRg'
+    font-size: 16px
+    color: #333
+    padding-left: 70px
+    letter-spacing: -0.5px
+    li
+      position: relative
+      margin-top: 40px
+      i
+        position: absolute
+        top: -12px
+        left: -70px
+        content: ""
+        width: 44px
+        height: 49px
+        background: url(../img/options_bg.png) no-repeat
+        &:before
           position: absolute
-          top: -5px
-          left: -50px
           content: ""
-          width: 33px
-          height: 33px
-          +border-radius(4px)
-          +background-clip(padding-box)
-          background-color: #abc563
+          top: 50%
+          left: 50%
+          +transform(translate(-50%,-50%))
+        &.i1
           &:before
-            position: absolute
-            content: ""
-            top: 50%
-            left: 50%
-            +transform(translate(-50%,-50%))
-          &.i1
-            &:before
-              background: url(../img/options_img1.png) center no-repeat
-              width: 13px
-              height: 24px
-          &.i2
-            &:before
-              background: url(../img/options_img2.png) center no-repeat
-              width: 21px
-              height: 20px
-          &.i3
-            &:before
-              background: url(../img/options_img3.png) center no-repeat
-              width: 15px
-              height: 24px
-          &.i4
-            &:before
-              background: url(../img/options_img4.png) center no-repeat
-              width: 23px
-              height: 13px
-          &.i5
-            &:before
-              background: url(../img/options_img5.png) center no-repeat
-              width: 15px
-              height: 20px
-          &.i6
-            &:before
-              background: url(../img/options_img6.png) center no-repeat
-              width: 19px
-              height: 18px
+            background: url(../img/options-img1.png) center no-repeat
+            width: 14px
+            height: 28px
+        &.i2
+          &:before
+            background: url(../img/options-img2.png) center no-repeat
+            width: 16px
+            height: 27px
+        &.i3
+          &:before
+            background: url(../img/options-img3.png) center no-repeat
+            width: 19px
+            height: 26px
+        &.i4
+          &:before
+            background: url(../img/options-img4.png) center no-repeat
+            width: 22px
+            height: 22px
+        &.i5
+          &:before
+            background: url(../img/options-img5.png) center no-repeat
+            width: 32px
+            height: 22px
+        &.i6
+          &:before
+            background: url(../img/options-img6.png) center no-repeat
+            width: 31px
+            height: 31px
+        &.i7
+          &:before
+            background: url(../img/options-img7.png) center no-repeat
+            width: 29px
+            height: 16px
+        &.i8
+          &:before
+            background: url(../img/options-img8.png) center no-repeat
+            width: 26px
+            height: 26px
 .works
   text-align: center
   padding-top: 70px
