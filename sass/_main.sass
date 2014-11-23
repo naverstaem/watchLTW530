@@ -243,6 +243,8 @@ header
 .features
   padding: 80px 0
   +background-image(linear-gradient(61deg, rgba(#1571d5,.08) 0%, rgba(#169fb9,.08) 100%))
+  img
+    margin-left: -50px
   &__item
     color: #333333
     min-height: 170px
@@ -280,57 +282,37 @@ header
 
   table
     border-collapse: separate
-    font-family: 'NeoSansW1G-Regular'
-    color: #1b1b1b
+    font-family: 'foundry_monoline_ot3_bold_Bd'
+    color: #333333
     tbody
       font-size: 14px
       tr
         &:nth-child(odd)
-          background: rgb(246,246,246)
-    tr
-      td
-        border: none
-        padding: 7px 0
-        &:nth-child(odd)
-          color: #8e8e8e
-          +border-top-left-radius(16px)
-          +border-bottom-left-radius(16px)
-          padding-left: 15px
-        &:nth-child(even)
-          +border-top-right-radius(16px)
-          +border-bottom-right-radius(16px)
-      th
-        width: 35%
-        border: none
-  &__colors
-    padding-left: 15px
-    font-family: 'NeoSansW1G-Regular'
-    font-size: 14px
-    color: #8e8e8e
+          background: #f0f0f0
 
-    span
-      display: inline-block
-      vertical-align: middle
-      width: 28px
-      height: 28px
-      margin-left: 10px
-      +border-radius(50%)
-      &.white
-        background: #f6f6f6
-      &.black
-        background: #0c0c0c
-      &.yellow
-        background: #ffd100
-      &.orange
-        background: #ff8900
+      tr
+        td
+          border: none
+          padding: 7px 0
+          &:nth-child(odd)
+            color: #666666
+            +border-top-left-radius(3px)
+            +border-bottom-left-radius(3px)
+            padding-left: 7px
+            font-family: 'foundry_monoline_ot3_mediumMd'
+          &:nth-child(even)
+            +border-top-right-radius(3px)
+            +border-bottom-right-radius(3px)
+    th
+      width: 30%
+      border: none !important
 
   &__img
     text-align: center
     img
       width: 100%
-      max-width: 198px
-      +border-radius(50%)
-      margin-top: 40px
+      max-width: 173px
+      margin-top: 100px
       &:first-child
         margin-top: 10px
 

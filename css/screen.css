@@ -1744,6 +1744,7 @@ header .header__form, .header--bottom .header__form { position: relative; z-inde
 .info__item:last-child span { border-bottom: none; }
 
 .features { padding: 80px 0; background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9Ii0wLjA5NDQ5MiIgeTE9IjAuODI5NTMyIiB4Mj0iMS4wOTQ0OTIiIHkyPSIwLjE3MDQ2OCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzE1NzFkNSIgc3RvcC1vcGFjaXR5PSIwLjA4Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMTY5ZmI5IiBzdG9wLW9wYWNpdHk9IjAuMDgiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA='); background-size: 100%; background-image: -moz-linear-gradient(29deg, rgba(21, 113, 213, 0.08) 0%, rgba(22, 159, 185, 0.08) 100%); background-image: -webkit-linear-gradient(29deg, rgba(21, 113, 213, 0.08) 0%, rgba(22, 159, 185, 0.08) 100%); background-image: linear-gradient(61deg, rgba(21, 113, 213, 0.08) 0%, rgba(22, 159, 185, 0.08) 100%); }
+.features img { margin-left: -50px; }
 .features__item { color: #333333; min-height: 170px; border-bottom: solid 1px #cee2e9; }
 .features__item h3 { font-family: "foundry_monoline_ot3_mediumMd"; font-size: 21px; }
 .features__item p { font-family: "foundry_monoline_ot3_regulaRg"; font-size: 16px; }
@@ -1755,21 +1756,15 @@ header .header__form, .header--bottom .header__form { position: relative; z-inde
 
 .specs { padding: 80px 0; border-bottom: solid 1px #e5e5e5; }
 .specs h2 { text-align: left; margin-bottom: 55px; }
-.specs table { border-collapse: separate; font-family: "NeoSansW1G-Regular"; color: #1b1b1b; }
+.specs table { border-collapse: separate; font-family: "foundry_monoline_ot3_bold_Bd"; color: #333333; }
 .specs table tbody { font-size: 14px; }
-.specs table tbody tr:nth-child(odd) { background: #f6f6f6; }
-.specs table tr td { border: none; padding: 7px 0; }
-.specs table tr td:nth-child(odd) { color: #8e8e8e; -moz-border-radius-topleft: 16px; -webkit-border-top-left-radius: 16px; border-top-left-radius: 16px; -moz-border-radius-bottomleft: 16px; -webkit-border-bottom-left-radius: 16px; border-bottom-left-radius: 16px; padding-left: 15px; }
-.specs table tr td:nth-child(even) { -moz-border-radius-topright: 16px; -webkit-border-top-right-radius: 16px; border-top-right-radius: 16px; -moz-border-radius-bottomright: 16px; -webkit-border-bottom-right-radius: 16px; border-bottom-right-radius: 16px; }
-.specs table tr th { width: 35%; border: none; }
-.specs__colors { padding-left: 15px; font-family: "NeoSansW1G-Regular"; font-size: 14px; color: #8e8e8e; }
-.specs__colors span { display: inline-block; vertical-align: middle; width: 28px; height: 28px; margin-left: 10px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
-.specs__colors span.white { background: #f6f6f6; }
-.specs__colors span.black { background: #0c0c0c; }
-.specs__colors span.yellow { background: #ffd100; }
-.specs__colors span.orange { background: #ff8900; }
+.specs table tbody tr:nth-child(odd) { background: #f0f0f0; }
+.specs table tbody tr td { border: none; padding: 7px 0; }
+.specs table tbody tr td:nth-child(odd) { color: #666666; -moz-border-radius-topleft: 3px; -webkit-border-top-left-radius: 3px; border-top-left-radius: 3px; -moz-border-radius-bottomleft: 3px; -webkit-border-bottom-left-radius: 3px; border-bottom-left-radius: 3px; padding-left: 7px; font-family: "foundry_monoline_ot3_mediumMd"; }
+.specs table tbody tr td:nth-child(even) { -moz-border-radius-topright: 3px; -webkit-border-top-right-radius: 3px; border-top-right-radius: 3px; -moz-border-radius-bottomright: 3px; -webkit-border-bottom-right-radius: 3px; border-bottom-right-radius: 3px; }
+.specs table th { width: 30%; border: none !important; }
 .specs__img { text-align: center; }
-.specs__img img { width: 100%; max-width: 198px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; margin-top: 40px; }
+.specs__img img { width: 100%; max-width: 173px; margin-top: 100px; }
 .specs__img img:first-child { margin-top: 10px; }
 
 .options { padding-top: 10px; padding-bottom: 65px; }
