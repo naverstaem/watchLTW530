@@ -292,7 +292,7 @@ header
       tr
         td
           border: none
-          padding: 7px 0
+          padding: 5px 0
           &:nth-child(odd)
             color: #666666
             +border-top-left-radius(3px)
@@ -388,64 +388,45 @@ header
             height: 26px
 .works
   text-align: center
-  padding-top: 70px
-  padding-bottom: 80px
-  background: url(../img/work_bg.png)
+  padding: 70px
+  +background-image(linear-gradient(61deg, #1571d5 0%, #169fb9 100%))
   +cover
+  h2
+    text-align: center
+    color: #ffffff
   &__item
     margin-top: 40px
     img
       margin-bottom: 30px
     p
-      font-family: 'NeoSansW1G-Regular'
-      font-size: 17px
-      color: #242424
-      padding: 0 10px
+      font-family: 'foundry_monoline_ot3_regulaRg'
+      font-size: 19px
+      color: #ffffff
 
 
 .reviews
   padding: 40px
+  h2
+    text-align: center
   &__item
     margin-top: 45px
     text-align: center
-    font-family: 'uni_sans_regularregular'
-  &__img
-    display: inline-block
-    float: left
-    width: 40%
-    text-align: left
-  &__text
-    font-family: 'NeoSansW1G-Regular'
-    text-align: left
-    float: right
-    padding-left: 10px
-    width: 60%
+    font-family: 'foundry_monoline_ot3_regulaRg'
+    font-size: 18px
+    border-right: solid 1px #ebebeb
+    &:last-of-type
+      border-right: none
     h3
-      font-size: 21px
       color: #242424
-      margin: 0
+      font-size: 18px
+      font-family: 'foundry_monoline_ot3_mediumMd'
     h4
-      font-size: 16px
       color: #999
+      font-size: 18px
     p
-      display: inline-block
-      position: relative
       margin-top: 15px
       color: #414040
-      font-size: 15px
-      padding: 15px
-      border: 1px solid #abc563
-      +border-radius(3px)
-      +background-clip(padding-box)
-      &:before
-        position: absolute
-        content: ""
-        top: -11px
-        left: 20px
-        background: url(../img/popup-ico.png) no-repeat
-        width: 31px
-        height: 13px
-        line-height: 1.5em
+      padding: 30px 25px 0
 
   &__buttons
     text-align: center
@@ -457,11 +438,11 @@ header
     max-width: 176px
     margin: 0 auto
     font-size: 21px
-    font-family: 'NeoSansW1G-Regular'
+    font-family: 'foundry_monoline_ot3_regulaRg'
   &__add-review
     display: inline-block
     margin: 20px auto 0
-    font-family: 'NeoSansW1G-Regular'
+    font-family: 'foundry_monoline_ot3_regulaRg'
     font-size: 16px
     color: #414141
     border-bottom: dotted 1px
@@ -473,6 +454,21 @@ header
 
 .header--bottom
   @extend header
+  .header__text--bottom
+    padding: 0
+    margin-top: 170px
+    h2
+      font-size: 47px
+      color: #ffffff
+      border-left: none
+      padding: 0
+      line-height: .9em
+      font-family: 'foundry_monoline_ot3_mediumMd'
+    h3
+      font-size: 36px
+      margin: 0
+      text-transform: uppercase
+      font-family: 'foundry_monoline_ot3_uultraLt'
 
 .other
   padding-top: 70px

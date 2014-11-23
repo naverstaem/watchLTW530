@@ -34,13 +34,13 @@ input, textarea
   &:active
     color: #ffffff
     +box-shadow(0 0 0 0)
-.btn--green
+.btn--blue
   text-transform: none
-  background: #abc563
-  +box-shadow(0 4px 0 #8aa446)
+  +box-shadow(0 4px 0 #1e659c)
+  +background(linear-gradient(to left, #159fb9 0%, #1571d5 100%))
 
   &:hover, &:focus
-    background: #b1cb6d
+    +background(linear-gradient(to left, lighten(#159fb9,5%) 0%, lighten(#1571d5,5%) 100%))
   &:active
     +box-shadow(0 0 0 0)
 
