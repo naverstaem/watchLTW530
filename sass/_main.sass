@@ -584,43 +584,52 @@ footer
       +opacity(.71)
   .modal-dialog
     +border-radius(3px)
-    max-width: 567px
+    max-width: 574px
     +background-clip(padding-box)
-    background: rgba(#fff,.88)
-    +box-shadow(0 8px 46px rgba(0,0,0,.44))
+    +box-shadow(0 5px 57px rgba(0,0,0,.29))
+    +background-image(linear-gradient(61deg, #1571d5 0%, #169fb9 100%))
 
   .modal-content
     position: relative
     +border-radius(3px)
     background: transparent
+    border: none
     .close
       position: absolute
+      color: #ffffff
+      +single-text-shadow()
       top: 7px
       right: 10px
-
+      +opacity(.4)
+      > span
+        font-size: 24px
+      &:hover
+        +opacity(.6)
   .modal-header
     border-bottom: none
     padding-top: 30px
     h2
       margin-top: 15px
-      font-family: 'NeoSansW1G-Regular'
-      font-size: 45px
+      font-family: 'foundry_monoline_ot3_regulaRg'
+      font-size: 42px
+      text-align: center
+      color: #ffffff
     h3
-      font-family: 'NeoSansW1G-Regular'
-      color: black
+      font-family: 'foundry_monoline_ot3_regulaRg'
       font-size: 17px
-      padding: 0 15px
+      padding: 0 40px
       line-height: 1.2em
+      color: #ffffff
 
 
 
   .modal-body
-    padding: 10px 45px 60px
+    padding: 10px 50px 60px
     form
       input[type = text]
         +placeholder
           font-size: 16px
-        height: 42.5px
+        height: 43px
         display: block
         +border-radius(2px)
         +background-clip(padding-box)
@@ -632,7 +641,7 @@ footer
         font-size: 16px
         color: #333
         max-width: 230px
-        font-family: 'uni_sans_regularregular'
+        font-family: 'foundry_monoline_ot3_regulaRg'
         padding-left: 10px
         &:focus
           +box-shadow(0 0 5px rgba(79,56,109,.27), inset 0 1px 2px rgba(0,0,0,.36))
@@ -640,10 +649,10 @@ footer
 
       button
         width: 100%
-        font-size: 21px
+        font-size: 22px
         max-width: 230px
-        font-family: 'NeoSansW1G-Medium'
-        height: 46.4px
+        font-family: 'foundry_monoline_ot3_bold_Bd'
+        height: 45px
         text-transform: uppercase
         display: block
         margin: 30px auto 0
@@ -651,7 +660,7 @@ footer
 .add-review
   @extend .feedback
   .modal-dialog
-    max-width: 567px
+    max-width: 574px
   .modal-content
   .modal-header
     padding-top: 30px
@@ -689,7 +698,7 @@ footer
           display: inline-block
           text-align: left
           font-size: 16px
-          font-family: 'NeoSansW1G-Regular'
+          font-family: 'foundry_monoline_ot3_regulaRg'
           >input
             display: none
             &:checked
@@ -702,7 +711,7 @@ footer
                     height: 10px
                     +border-radius(1px)
                     +background-clip(padding-box)
-                    background-color: #e74d6d
+                    background-color: #333333
                     top: 50%
                     left: 50%
                     +transform(translate(-50%,-50%))
@@ -729,6 +738,7 @@ footer
             .checkbox__text
               display: inline-block
               vertical-align: top
+              color: #ffffff
         button
           display: inline-block
           max-width: 185px
@@ -746,13 +756,20 @@ footer
 .thanks
   @extend .feedback
   .modal-backdrop
-    background: #000
+    background: #ffffff
     &.in
       +opacity(.71)
   .modal-dialog
-    max-width: 441px
+    max-width: 463px
+    background: url(../img/thanks_bg.png) no-repeat
+    +cover
+    +box-shadow(0 0 0 0)
   .modal-content
     position: relative
+    box-shadow: 0 0 0 0
+    .close
+      display: none
+
   .modal-header
     .img
       width: 96px
@@ -775,7 +792,7 @@ footer
       font-size: 18px
       padding: 0
   .modal-body
-    padding: 20px 20px 50px
+    padding: 110px 50px 130px
 
 
 //media queries
