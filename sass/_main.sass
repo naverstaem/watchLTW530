@@ -1,0 +1,826 @@
+
+
+.top
+  &:before
+    content: ''
+    position: absolute
+    width: 100%
+    height: 6px
+    background: linear-gradient(to left, #159dbb, #1571d5)
+    top: 0
+    left: 0
+.navbar
+  margin-bottom: 0
+
+.navbar-brand
+  text-transform: uppercase
+  color: #1588c8 !important
+  font-family: 'foundry_monoline_ot3_extraXBd'
+  font-size: 42px
+  margin-top: 10px
+  letter-spacing: -5px
+  span
+    color: #282828
+.navbar-default
+  border: none
+  background: none
+  padding: 13px 0
+  text-align: center
+  .icon-bar
+    background-color: #333 !important
+
+  .navbar-nav
+    margin-top: 10px
+
+    li
+      a
+        color: #333 // text color
+        font-family: 'foundry_monoline_ot3_bold_Bd'
+        font-size: 17px
+        position: relative
+        text-transform: uppercase
+        text-decoration: none
+        &:hover, &.active, &:focus
+          text-decoration: none
+          color: #1588c8
+
+
+  .navbar-right
+    margin-top: 15px
+    font-family: 'foundry_monoline_ot3_regulaRg'
+    .right-nomenclature
+      color: #333
+      font-size: 14px
+      text-transform: uppercase
+      display: inline-block
+      position: relative
+      top: -4px
+      margin-right: 20px
+    .right-b
+      display: inline-block
+      text-align: right
+
+      h2
+        font-weight: normal
+        font-size: 29px
+        margin: 0
+        i
+          position: relative
+          background: url(../img/phone.png) no-repeat
+          width: 26px
+          height: 26px
+          margin-right: 10px
+          top: 3px
+          display: inline-block
+      a
+        color: #333 // text color
+        font-size: 15px
+        line-height: 1
+        display: inline-block
+        border-bottom: 1px dotted #333
+        text-decoration: none
+        +border-radius(0)
+        padding: 0
+        &:hover
+          border-bottom: 1px dotted rgba(#fff, 0)
+
+
+
+
+header
+  position: relative
+  +background-image(linear-gradient(61deg, #1571d5 0%, #169fb9 100%))
+  +cover
+  overflow: hidden
+  &:before
+    +background-image(linear-gradient(to bottom, rgba(0,0,0,.33) 0%, rgba(0,0,0,0.27) 0.49%, rgba(255,255,255,0) 100%))
+    height: 8px
+    width: 100%
+    position: absolute
+    content: ""
+    top: 0
+    left: 0
+
+  h1
+    text-align: left !important
+    font-family: 'foundry_monoline_ot3_uultraLt'
+    font-size: 47px
+    color: #ffffff
+    text-transform: uppercase
+    margin-top: 80px
+    margin-bottom: 40px
+  h2
+    text-align: left
+    font-family: 'foundry_monoline_ot3_regulaRg'
+    font-size: 23px
+    color: #ffffff
+    text-transform: uppercase
+    display: inline-block
+    border-left: solid white 7px
+    padding-left: 20px
+  .header__text
+    font-family: 'foundry_monoline_ot3_regulaRg'
+    margin-top: 35px
+    font-size: 19px
+    color: #ffffff
+    padding-right: 40px
+
+  .header__watch
+    position: relative
+    text-align: left
+    z-index: 0
+    margin-top: -90px
+    margin-left: -400px
+    margin-bottom: -110px
+    img
+      display: inline-block
+      max-width: 884px
+  .header__form
+    position: relative
+    z-index: 0
+    margin-left: -5px
+    margin-right: -5px
+
+.intro
+  padding-top: 30px
+  &__img
+    text-align: center
+    img
+      width: 100%
+      max-width: 246px
+
+  &__text
+    padding-top: 50px
+    color: #333
+    font-family: 'NeoSansW1G-Regular'
+    h2
+      font-size: 27px
+      font-weight: normal
+    p
+      font-size: 18px
+      margin-top: 20px
+
+
+
+
+
+.about
+  font-family: 'NeoSansW1G-Medium'
+  color: #272727
+
+  h2
+    margin-bottom: 30px
+
+  p
+    font-size: 18px
+    font-family: 'foundry_monoline_ot3_regulaRg'
+    //line-height: 1.7em
+    margin-top: 30px
+    span
+      font-family: 'foundry_monoline_ot3_mediumMd'
+
+  .about__img
+    text-align: center
+    margin-top: 40px
+    img
+      width: 100%
+      max-width: 355px
+  &__first
+    padding: 80px
+  &__fresh
+    background: rgba(#f6f6f6,.6)
+    padding: 60px
+    .about__img
+      img
+        max-width: 348px
+
+
+.construct
+  color: #333333
+  padding: 80px 0
+  h2
+    margin-bottom: 30px
+  p
+    font-size: 19px
+    font-family: 'foundry_monoline_ot3_regulaRg'
+    margin-top: 30px
+  &__img
+    margin-top: 40px
+    text-align: center
+    img
+      width: 100%
+    &.img1
+      img
+        max-width: 352px
+    &.img2
+      margin-top: 20px
+      img
+        max-width: 343px
+    &.img3
+      margin-top: 10px
+      img
+        max-width: 329px
+.info
+  +box-shadow(inset black 0 20px 40px -32px)
+  padding: 60px 0
+  color: #333333
+  font-size: 19px
+  font-family: 'foundry_monoline_ot3_regulaRg'
+  &__item
+    background: url(../img/info-item_bg.png) left center no-repeat
+    padding-left: 120px
+    span
+      padding-bottom: 30px
+      padding-top: 22px
+      border-bottom: solid 1px #e6e6e6
+      display: inline-block
+
+    &:last-child
+      span
+        border-bottom: none
+
+
+.features
+  padding: 80px 0
+  +background-image(linear-gradient(61deg, rgba(#1571d5,.08) 0%, rgba(#169fb9,.08) 100%))
+  img
+    margin-left: -50px
+  &__item
+    color: #333333
+    min-height: 170px
+    border-bottom: solid 1px #cee2e9
+    h3
+      font-family: 'foundry_monoline_ot3_mediumMd'
+      font-size: 21px
+    p
+      font-family: 'foundry_monoline_ot3_regulaRg'
+      font-size: 16px
+  .row
+    .features__item
+      &:last-child
+        border-bottom: none
+  &__also
+    +border-radius(2px)
+    +background-clip(padding-box)
+    background: rgba(#043f59,.04)
+    padding: 20px
+    color: #333333
+    h2
+      margin-top: 0
+    h3
+      font-family: 'foundry_monoline_ot3_mediumMd'
+      font-size: 18px
+    p
+      font-family: 'foundry_monoline_ot3_regulaRg'
+      font-size: 16px
+.specs
+  padding: 80px 0
+  h2
+    text-align: left
+    margin-bottom: 55px
+
+  table
+    border-collapse: separate
+    font-family: 'foundry_monoline_ot3_bold_Bd'
+    color: #333333
+    tbody
+      font-size: 14px
+      tr
+        &:nth-child(odd)
+          background: #f0f0f0
+
+      tr
+        td
+          border: none
+          padding: 5px 0
+          &:nth-child(odd)
+            color: #666666
+            +border-top-left-radius(3px)
+            +border-bottom-left-radius(3px)
+            padding-left: 7px
+            font-family: 'foundry_monoline_ot3_mediumMd'
+          &:nth-child(even)
+            +border-top-right-radius(3px)
+            +border-bottom-right-radius(3px)
+    th
+      width: 30%
+      border: none !important
+
+  &__img
+    text-align: center
+    img
+      width: 100%
+      max-width: 173px
+      margin-top: 100px
+      &:first-child
+        margin-top: 10px
+
+
+.options
+
+  padding-top: 10px
+  padding-bottom: 90px
+
+  ul
+    padding-top: 10px
+    list-style: none
+    font-family: 'foundry_monoline_ot3_regulaRg'
+    font-size: 16px
+    color: #333
+    padding-left: 70px
+    letter-spacing: -0.5px
+    li
+      position: relative
+      margin-top: 40px
+      i
+        position: absolute
+        top: -12px
+        left: -70px
+        content: ""
+        width: 44px
+        height: 49px
+        background: url(../img/options_bg.png) no-repeat
+        &:before
+          position: absolute
+          content: ""
+          top: 50%
+          left: 50%
+          +transform(translate(-50%,-50%))
+        &.i1
+          &:before
+            background: url(../img/options-img1.png) center no-repeat
+            width: 14px
+            height: 28px
+        &.i2
+          &:before
+            background: url(../img/options-img2.png) center no-repeat
+            width: 16px
+            height: 27px
+        &.i3
+          &:before
+            background: url(../img/options-img3.png) center no-repeat
+            width: 19px
+            height: 26px
+        &.i4
+          &:before
+            background: url(../img/options-img4.png) center no-repeat
+            width: 22px
+            height: 22px
+        &.i5
+          &:before
+            background: url(../img/options-img5.png) center no-repeat
+            width: 32px
+            height: 22px
+        &.i6
+          &:before
+            background: url(../img/options-img6.png) center no-repeat
+            width: 31px
+            height: 31px
+        &.i7
+          &:before
+            background: url(../img/options-img7.png) center no-repeat
+            width: 29px
+            height: 16px
+        &.i8
+          &:before
+            background: url(../img/options-img8.png) center no-repeat
+            width: 26px
+            height: 26px
+.works
+  text-align: center
+  padding: 70px
+  +background-image(linear-gradient(61deg, #1571d5 0%, #169fb9 100%))
+  +cover
+  h2
+    text-align: center
+    color: #ffffff
+  &__item
+    margin-top: 40px
+    img
+      margin-bottom: 30px
+    p
+      font-family: 'foundry_monoline_ot3_regulaRg'
+      font-size: 19px
+      color: #ffffff
+
+
+.reviews
+  padding: 40px
+  h2
+    text-align: center
+    font-family: 'foundry_monoline_ot3_regulaRg'
+  &__item
+    margin-top: 45px
+    text-align: center
+    font-family: 'foundry_monoline_ot3_regulaRg'
+    font-size: 18px
+    border-right: solid 1px #ebebeb
+    &:last-of-type
+      border-right: none
+    h3
+      color: #242424
+      font-size: 18px
+      font-family: 'foundry_monoline_ot3_mediumMd'
+    h4
+      color: #999
+      font-size: 18px
+    p
+      margin-top: 15px
+      color: #414040
+      padding: 30px 25px 0
+
+  &__buttons
+    text-align: center
+    padding-top: 50px
+  &__more
+    display: block
+    height: 49px
+    width: 100%
+    max-width: 176px
+    margin: 0 auto
+    font-size: 21px
+    font-family: 'foundry_monoline_ot3_regulaRg'
+  &__add-review
+    display: inline-block
+    margin: 20px auto 0
+    font-family: 'foundry_monoline_ot3_regulaRg'
+    font-size: 16px
+    color: #414141
+    border-bottom: dotted 1px
+    text-decoration: none
+    &:hover, &:active, &:focus
+      border-bottom: dotted 1px #ffffff
+      color: #414141
+      text-decoration: none
+
+.header--bottom
+  @extend header
+  .header__text--bottom
+    padding: 0
+    margin-top: 170px
+    h2
+      font-size: 47px
+      color: #ffffff
+      border-left: none
+      padding: 0
+      line-height: .9em
+      font-family: 'foundry_monoline_ot3_mediumMd'
+    h3
+      font-size: 36px
+      margin: 0
+      text-transform: uppercase
+      font-family: 'foundry_monoline_ot3_uultraLt'
+
+.other
+  padding-top: 70px
+  text-align: center
+  padding-bottom: 55px
+  h2
+    text-align: center
+    font-family: 'foundry_monoline_ot3_regulaRg'
+  .item
+    padding: 30px 20px
+    margin-top: 30px
+    +border-radius(4px)
+    +background-clip(padding-box)
+    //border: 3px rgb(219,219,219) solid
+    text-align: center
+    +background-image(linear-gradient(61deg, rgba(#1571d5,.1) 0%, rgba(#169fb9,.1) 100%))
+    +cover
+
+
+    h3
+      font-size: 23px
+      font-family: 'foundry_monoline_ot3_regulaRg'
+      color: #181818
+      margin: 0 0 10px
+
+    p
+      font-size: 29px
+      color: #181818
+      text-transform: uppercase
+
+
+  .img
+    display: inline-block
+    text-align: center
+    margin-bottom: 15px
+    height: 250px
+    width: 224px
+
+  .price-b
+    font-family: 'foundry_monoline_ot3_mediumMd'
+    color: #181818
+    font-size: 26px
+    margin-bottom: 15px
+  form
+    padding: 0 13px
+
+  input
+    +placeholder
+      font-size: 16px
+    width: 100%
+    height: 35.5px
+    margin-bottom: 10px
+    padding-left: 15px
+    font-size: 16px
+    +border-radius(3px)
+    +background-clip(padding-box)
+    border: 1px solid rgba(204,204,204,.59)
+    background: #ffffff
+
+
+
+
+    &:focus
+      @include box-shadow(0 0 9px rgba(204,62,82,.13)) // outer glow
+
+
+  button
+    width: 100%
+    font-family: 'foundry_monoline_ot3_bold_Bd'
+    text-transform: uppercase
+    font-size: 21px
+    margin-top: 15px
+    color: #ffffff
+
+
+
+footer
+  border-top: solid 1px #e2e2e2
+  padding-top: 35px
+  padding-bottom: 40px
+  font-family: 'foundry_monoline_ot3_regulaRg'
+  color: #414141
+  +cover
+  span
+    display: inline-block
+    position: relative
+    margin-right: 10px
+  p
+    font-size: 16px
+    display: inline-block
+    vertical-align: middle
+    margin-bottom: 0
+    line-height: 1.7em
+    font-family: 'foundry_monoline_ot3_mediumMd'
+  .footer__right
+    text-align: right
+    font-size: 15px
+    a
+      margin-left: 15px
+      color: #414141
+      text-decoration: underline
+      &:hover
+        text-decoration: none
+//  Modal styles
+
+
+.feedback
+  text-align: center
+  .modal-backdrop
+    background: #fff
+    &.in
+      +opacity(.71)
+  .modal-dialog
+    +border-radius(3px)
+    max-width: 574px
+    +background-clip(padding-box)
+    +box-shadow(0 5px 57px rgba(0,0,0,.29))
+    +background-image(linear-gradient(61deg, #1571d5 0%, #169fb9 100%))
+
+  .modal-content
+    position: relative
+    +border-radius(3px)
+    background: transparent
+    border: none
+    .close
+      position: absolute
+      color: #ffffff
+      +single-text-shadow()
+      top: 7px
+      right: 10px
+      +opacity(.4)
+      > span
+        font-size: 24px
+      &:hover
+        +opacity(.6)
+  .modal-header
+    border-bottom: none
+    padding-top: 30px
+    h2
+      margin-top: 15px
+      font-family: 'foundry_monoline_ot3_regulaRg'
+      font-size: 42px
+      text-align: center
+      color: #ffffff
+    h3
+      font-family: 'foundry_monoline_ot3_regulaRg'
+      font-size: 17px
+      padding: 0 40px
+      line-height: 1.2em
+      color: #ffffff
+
+
+
+  .modal-body
+    padding: 10px 50px 60px
+    form
+      input[type = text]
+        +placeholder
+          font-size: 16px
+        height: 43px
+        display: block
+        +border-radius(2px)
+        +background-clip(padding-box)
+        background: #fbfbfb
+        +box-shadow(inset 0 1px 2px rgba(0,0,0,.36))
+        width: 100%
+        border: none
+        margin: 0 auto 10px
+        font-size: 16px
+        color: #333
+        max-width: 230px
+        font-family: 'foundry_monoline_ot3_regulaRg'
+        padding-left: 10px
+        &:focus
+          +box-shadow(0 0 5px rgba(79,56,109,.27), inset 0 1px 2px rgba(0,0,0,.36))
+
+
+      button
+        width: 100%
+        font-size: 22px
+        max-width: 230px
+        font-family: 'foundry_monoline_ot3_bold_Bd'
+        height: 45px
+        text-transform: uppercase
+        display: block
+        margin: 30px auto 0
+
+.add-review
+  @extend .feedback
+  .modal-dialog
+    max-width: 574px
+  .modal-content
+  .modal-header
+    padding-top: 30px
+  .modal-body
+    form
+      text-align: left
+
+      .form__inputs
+        text-align: center
+        width: 100%
+      input[type = text]
+        display: inline-block
+        margin-right: 5px
+        &:last-child
+          margin-right: 0
+
+      textarea
+        +placeholder
+          font-size: 16px
+        height: 106px
+        resize: none
+        width: 100%
+        max-width: 470px
+        padding: 15px 10px
+        margin-top: 5px
+        +border-radius(2px)
+        +background-clip(padding-box)
+        background-color: #fbfbfb
+        +box-shadow(inset 0 1px 2px rgba(0,0,0,.36))
+        border: none
+      .form__bottom
+        +clr
+
+        .checkbox
+          display: inline-block
+          text-align: left
+          font-size: 16px
+          font-family: 'foundry_monoline_ot3_regulaRg'
+          >input
+            display: none
+            &:checked
+              &+label
+                .checkbox__box
+                  &:before
+                    position: absolute
+                    content: ""
+                    width: 10px
+                    height: 10px
+                    +border-radius(1px)
+                    +background-clip(padding-box)
+                    background-color: #333333
+                    top: 50%
+                    left: 50%
+                    +transform(translate(-50%,-50%))
+
+
+
+          label
+            +clr
+            padding: 0
+            margin-top: 20px
+
+            .checkbox__box
+              position: relative
+              top: 2px
+              text-align: center
+              margin-right: 10px
+              width: 18px
+              height: 18px
+              +border-radius(2px)
+              +background-clip(padding-box)
+              background: #fbfbfb
+              +box-shadow(inset 0 1px 2px rgba(0,0,0,.36))
+              display: inline-block
+            .checkbox__text
+              display: inline-block
+              vertical-align: top
+              color: #ffffff
+        button
+          display: inline-block
+          max-width: 185px
+          float: right
+          &:disabled
+            background: #ccc
+            +box-shadow(0 4px 0 #aaa)
+            cursor: auto
+
+
+
+
+
+
+.thanks
+  @extend .feedback
+  .modal-backdrop
+    background: #ffffff
+    &.in
+      +opacity(.71)
+  .modal-dialog
+    max-width: 463px
+    background: url(../img/thanks_bg.png) no-repeat
+    +cover
+    +box-shadow(0 0 0 0)
+  .modal-content
+    position: relative
+    box-shadow: 0 0 0 0
+    .close
+      display: none
+
+  .modal-header
+    .img
+      width: 96px
+      height: 96px
+      +border-radius(50%)
+      border: solid 3px #9ad300
+      margin: 0 auto
+      .vertical-aligned
+        height: 100%
+        display: inline-block
+        vertical-align: middle
+      img
+        display: inline-block
+        vertical-align: middle
+        position: relative
+        top: -3px
+    h2
+      font-size: 45px
+    h3
+      font-size: 18px
+      padding: 0
+  .modal-body
+    padding: 110px 50px 130px
+
+
+//media queries
+//@media (max-width: $screen-md-min)
+//  header
+//    .header__form
+//      margin: 0
+//  .specs
+//    .specs__img
+//      img
+//        margin-top: 40px
+//  .form
+//    padding-left: 80px
+//    padding-right: 80px
+//  .other
+//    .item
+//      padding-left: 80px
+//      padding-right: 80px
+@media (max-width: $screen-sm-min)
+  h1, h2
+    font-size: 24px !important
+  //.reviews
+  //  &__img
+  //    float: none
+  //  &__text
+  //    float: none
+
+//@media (max-width: $screen-xs-min)
+//  .form
+//    padding-left: 30px !important
+//    padding-right: 30px !important

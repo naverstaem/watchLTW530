@@ -1,0 +1,195 @@
+//@import "../css/bootstrap.min.css"
+@import "../css/fonts/fonts.css"
+
+
+*
+  outline: none !important
+
+input.error, textarea.error
+  box-shadow: inset 0 0 10px red !important
+label.error
+  display: none !important
+
+input, textarea
+  +placeholder
+    font-size: 16px
+    text-transform: none
+    color: #999999
+    font-family: 'foundry_monoline_ot3_regulaRg'
+
+.container
+  max-width: 965px
+
+.btn
+  text-transform: uppercase
+  color: #ffffff
+  +border-radius(3px)
+  +background-clip(padding-box)
+  background: #262626
+  +box-shadow(0 4px 0 #000)
+
+  &:hover, &:focus
+    background: #2f2f2f
+    color: #ffffff
+  &:active
+    color: #ffffff
+    +box-shadow(0 0 0 0)
+.btn--blue
+  text-transform: none
+  +box-shadow(0 4px 0 #1e659c)
+  +background(linear-gradient(to left, #159fb9 0%, #1571d5 100%))
+
+  &:hover, &:focus
+    +background(linear-gradient(to left, lighten(#159fb9,5%) 0%, lighten(#1571d5,5%) 100%))
+  &:active
+    +box-shadow(0 0 0 0)
+
+.title
+  color: #333333
+  text-align: left
+  font-size: 36px
+  text-transform: uppercase
+  font-family: 'foundry_monoline_ot3_lightLt'
+  span
+    font-family: 'foundry_monoline_ot3_mediumMd'
+.counter
+  display: inline-block
+  vertical-align: middle
+  margin-top: 10px
+  text-align: center
+
+  .bl
+    display: inline-block
+    text-align: center
+    margin: 0 6px
+    span
+      width: 63px
+      height: 72px
+      display: inline-block
+      font-family: 'foundry_monoline_ot3_mediumMd'
+      font-size: 32px
+      color: #313131
+      padding-top: 11px
+      background: url(../img/counter_bg.png) no-repeat
+      position: relative
+
+      &:after
+        position: absolute
+        content: ":"
+        font-size: 32px
+        color: #313131
+        top: 8px
+        font-family: 'foundry_monoline_ot3_mediumMd'
+        right: -12px
+      &.s
+        &:after
+          content: ""
+
+
+  p
+    font-family: 'foundry_monoline_ot3_regulaRg'
+    font-size: 12px
+    color: #282828
+    &.counter__title
+      font-size: 14px
+
+
+.form
+  background: #ffffff
+  +cover
+  //border-top: solid #abc563 8px
+  padding: 30px 10px 35px
+  text-align: center
+  &:before
+    +background-image(linear-gradient(to bottom, rgba(0,0,0,.33) 0%, rgba(0,0,0,0.27) 0.49%, rgba(255,255,255,0.27) 100%))
+    height: 8px
+    width: 100%
+    position: absolute
+    content: ""
+    top: 0
+    left: 0
+  &__header
+    color: #333
+    h3
+      font-size: 28.7px
+      font-family: 'foundry_monoline_ot3_mediumMd'
+      text-transform: uppercase
+      margin-bottom: 0
+    h4
+      font-size: 20px
+      font-family: 'foundry_monoline_ot3_regulaRg'
+      margin-top: 0
+      margin-bottom: 15px
+  &__price
+    .price__old
+      color: #969696
+      font-family: 'foundry_monoline_ot3_regulaRg'
+      font-size: 24.8px
+      span
+        position: relative
+        &:before
+          position: absolute
+          top: 15px
+          left: -2px
+          right: -5px
+          height: 0
+          border-bottom: solid 1px #969696
+          content: ""
+    .price__new
+      font-size: 40.8px
+      color: #282828
+      font-family: 'foundry_monoline_ot3_bold_Bd'
+      line-height: 1em
+      span
+        position: relative
+        &:before
+          position: absolute
+          content: ""
+          width: 10px
+          height: 0
+          border-bottom: solid 4px #282828
+          left: -1px
+          top: 27px
+        &:after
+          position: absolute
+          content: ""
+          width: 20px
+          height: 0
+          border-bottom: solid 4px #282828
+          left: -1px
+          top: 35px
+  &__shadow
+    background: url(../img/form_shadow.png)
+    +cover
+    height: 15px
+    width: 100%
+    margin: 10px 0
+
+
+  &__form
+    padding: 0 25px
+    input
+      +placeholder
+        font-size: 16px
+      width: 100%
+      height: 42.5px
+      margin-bottom: 10px
+      padding-left: 15px
+      font-size: 16px
+      +background-clip(padding-box)
+      +border-radius(2px)
+      +background-clip(padding-box)
+      border: none
+      background: #f9f9f9
+      +box-shadow(inset 0 1px 2px rgba(0,0,0,.36))
+
+      &:focus
+        +box-shadow(0 0 9px rgba(204,62,82,.13))
+
+
+    button
+      width: 100%
+      text-transform: uppercase
+      font-size: 26px
+      margin-top: 15px
+      font-family: 'foundry_monoline_ot3_bold_Bd'
