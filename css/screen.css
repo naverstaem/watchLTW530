@@ -1810,6 +1810,7 @@ header .header__form, .header--bottom .header__form { position: relative; z-inde
 .other .item p { font-size: 29px; color: #181818; text-transform: uppercase; }
 .other .img { display: inline-block; text-align: center; margin-bottom: 15px; height: 250px; width: 224px; }
 .other .price-b { font-family: "foundry_monoline_ot3_mediumMd"; color: #181818; font-size: 26px; margin-bottom: 15px; }
+.other form { padding: 0 13px; }
 .other input { width: 100%; height: 35.5px; margin-bottom: 10px; padding-left: 15px; font-size: 16px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; -moz-background-clip: padding; -o-background-clip: padding-box; -webkit-background-clip: padding; background-clip: padding-box; border: 1px solid rgba(204, 204, 204, 0.59); background: #ffffff; }
 .other input:-ms-input-placeholder { font-size: 16px; }
 .other input:-moz-placeholder { font-size: 16px; }
@@ -1819,7 +1820,7 @@ header .header__form, .header--bottom .header__form { position: relative; z-inde
 .other input:focus { -webkit-box-shadow: 0 0 9px rgba(204, 62, 82, 0.13); box-shadow: 0 0 9px rgba(204, 62, 82, 0.13); }
 .other button { width: 100%; font-family: "foundry_monoline_ot3_bold_Bd"; text-transform: uppercase; font-size: 21px; margin-top: 15px; color: #ffffff; }
 
-footer { padding-top: 35px; padding-bottom: 40px; font-family: "foundry_monoline_ot3_regulaRg"; color: #414141; background: url(../img/footer_bg.png); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+footer { border-top: solid 1px #e2e2e2; padding-top: 35px; padding-bottom: 40px; font-family: "foundry_monoline_ot3_regulaRg"; color: #414141; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
 footer span { display: inline-block; position: relative; margin-right: 10px; }
 footer p { font-size: 16px; display: inline-block; vertical-align: middle; margin-bottom: 0; line-height: 1.7em; font-family: "foundry_monoline_ot3_mediumMd"; }
 footer .footer__right { text-align: right; font-size: 15px; }
