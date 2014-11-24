@@ -408,6 +408,7 @@ header
   padding: 40px
   h2
     text-align: center
+    font-family: 'foundry_monoline_ot3_regulaRg'
   &__item
     margin-top: 45px
     text-align: center
@@ -474,23 +475,23 @@ header
   padding-top: 70px
   text-align: center
   padding-bottom: 55px
-
+  h2
+    text-align: center
+    font-family: 'foundry_monoline_ot3_regulaRg'
   .item
-    padding: 30px 40px 100px
+    padding: 30px 20px
     margin-top: 30px
-    margin-left: -15px
-    margin-right: -15px
     +border-radius(4px)
     +background-clip(padding-box)
     //border: 3px rgb(219,219,219) solid
     text-align: center
-    background: url(../img/other-form_bg.png) no-repeat
+    +background-image(linear-gradient(61deg, rgba(#1571d5,.1) 0%, rgba(#169fb9,.1) 100%))
     +cover
 
 
     h3
       font-size: 23px
-      font-family: 'NeoSansW1G-Regular'
+      font-family: 'foundry_monoline_ot3_regulaRg'
       color: #181818
       margin: 0 0 10px
 
@@ -502,19 +503,13 @@ header
 
   .img
     display: inline-block
-    background: #ffffff
     text-align: center
     margin-bottom: 15px
-    height: 179px
-    span
-      vertical-align: middle
-      display: inline-block
-      height: 100%
-    img
-      vertical-align: middle
-      display: inline-block
+    height: 250px
+    width: 224px
+
   .price-b
-    font-family: 'NeoSansW1G-Bold'
+    font-family: 'foundry_monoline_ot3_mediumMd'
     color: #181818
     font-size: 26px
     margin-bottom: 15px
@@ -528,21 +523,25 @@ header
     margin-bottom: 10px
     padding-left: 15px
     font-size: 16px
-    +background-clip(padding-box)
-    border: 1px solid rgba(204,204,204,.59)
     +border-radius(3px)
     +background-clip(padding-box)
-    +background-image(linear-gradient(to bottom, #fff 0%, #fff 1%, #fff 100%))
+    border: 1px solid rgba(204,204,204,.59)
+    background: #ffffff
+
+
+
+
     &:focus
       @include box-shadow(0 0 9px rgba(204,62,82,.13)) // outer glow
 
 
   button
     width: 100%
-    font-family: 'NeoSansW1G-Regular'
+    font-family: 'foundry_monoline_ot3_bold_Bd'
     text-transform: uppercase
     font-size: 21px
     margin-top: 15px
+    color: #ffffff
 
 
 
@@ -550,7 +549,7 @@ footer
 
   padding-top: 35px
   padding-bottom: 40px
-  font-family: 'NeoSansW1G-Regular'
+  font-family: 'foundry_monoline_ot3_regulaRg'
   color: #414141
   background: url(../img/footer_bg.png)
   +cover
@@ -564,7 +563,7 @@ footer
     vertical-align: middle
     margin-bottom: 0
     line-height: 1.7em
-    font-family: 'NeoSansW1G-Medium'
+    font-family: 'foundry_monoline_ot3_mediumMd'
   .footer__right
     text-align: right
     font-size: 15px
